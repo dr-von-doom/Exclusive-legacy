@@ -1,0 +1,7 @@
+@import url("./colors.css");
+@import url("./fonts.css");
+
+.test {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+}

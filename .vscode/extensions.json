@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "ritwickdey.LiveServer",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "unwantedRecommendations": []
+}
