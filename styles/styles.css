@@ -13,22 +13,25 @@
   font-family: Arial, sans-serif;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #ffffff;
+  color: #3f3f3f;
 }
 
 .logo-img {
-  height: 50px;
+  height: 55px;
+  width: auto;
 }
 
 .search-bar {
   display: flex;
   flex: 1;
+  height: 35px;
   margin: 0 20px;
 }
 
@@ -37,26 +40,39 @@ input {
   padding: 8px;
   border: none;
   border-radius: 5px 0 0 5px;
+  box-shadow: 2px 2px 5px rgba(192, 192, 192, 0.3);
 }
 
 button {
-  padding: 8px 10px;
-  background-color: #555;
+  padding: 4px;
+  padding-left: 8px;
+  padding-top: 8px;
+  align-items: center;
+  background-color: #dfdfdf;
   border: none;
   border-radius: 0 5px 5px 0;
+  box-shadow: 2px 2px 5px rgba(192, 192, 192, 0.3);
   cursor: pointer;
-  color: #fff;
+  color:  #3f3f3f;
+}
+
+.logo-imgnav {
+  height: 20px;
+  width: auto;
+  margin-right: 4px;
 }
 
 .header-links {
-  color: #fff;
+  display: inline-flex;
+  color: #3f3f3f;
+  align-items: center;
   margin-left: 15px;
   text-decoration: none;
 }
 
 
 .subheader {
-  background-color: #444;
+  background-color: #ececec;
   padding: 10px 20px;
 }
 
@@ -71,14 +87,14 @@ button {
 }
 
 a {
-  color: #fff;
+  color: #1b1b1b;
   text-decoration: none;
 }
 
 .dropdown {
   display: none;
   position: absolute;
-  background-color: #555;
+  background-color: #ececec;
   list-style-type: none;
   padding: 10px;
   margin-top: 5px;
@@ -90,6 +106,45 @@ a {
   margin-bottom: 5px;
 }
 
+.footer {
+  background-color: #ffffff;
+  color: #383838;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-top i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.sitemap {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sitemap-li {
+  margin: 0 15px;
+}
+
+.logo-imgfooter {
+  height: 50px;
+  border-radius: 20%;
+  width: auto;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -109,5 +164,22 @@ a {
   .nav-menu {
       justify-content: center;
   }
+  .footer-top {
+    flex-direction: column;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    margin-bottom: 10px;
+}
+
+.sitemap {
+    flex-direction: column;
+}
+
+.sitemap-li {
+    margin-bottom: 10px;
+}
 
 }
