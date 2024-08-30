@@ -1,17 +1,17 @@
 @import url("./colors.css");
 @import url("./fonts.css");
 
-.test {
-  color: var(--color-primary);
-  font-family: var(--font-primary);
-}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
 }
+
+/** HEADER STYLES **/
 
 header {
   display: flex;
@@ -22,116 +22,138 @@ header {
   color: #3f3f3f;
 }
 
-/** HEADER STYLES **/
 
-.header-logo-img {
-  height: 55px;
+
+header .logo-img {
+  height: 20px;
   width: auto;
 }
 
-.header-search-bar {
+header .header-search {
   display: flex;
   flex: 1;
   height: 35px;
   margin: 0 20px;
 }
 
-.header-search-input {
-  margin-left: 30%;
-  width: 50%;
-  padding: 8px;
-  border: none;
-  background-color: #dfdfdf;
-}
-
-.header-search-button {
-  padding: 4px;
-  padding-left: 8px;
-  padding-top: 8px;
-  align-items: center;
-  background-color: #dfdfdf;
-  border: none;
-  cursor: pointer;
-  color: #3f3f3f;
-}
-
-.header-logo-imgnav {
-  height: 20px;
+header .logo-img {
+  height: 30px;
   width: auto;
   margin-right: 4px;
 }
 
-.header-header-links {
+header img {
+  height: 26px;
+  width: auto;
+  margin-right: 4px;
+}
+
+header a {
   display: inline-flex;
-  color: #3f3f3f;
+  color: #000000;
   align-items: center;
   margin-left: 15px;
   text-decoration: none;
 }
 
-.header-subheader {
+.header-links {
+  padding-right: 0px;
+}
+
+.header-search input {
+  border-radius: 4px 0 0 4px;
+  margin-left: 32%;
+  width: 40%;
+  padding: 10px;
+  border: none;
+  background-color: #F5F5F5;
+}
+
+.header-search button {
+  border-radius: 0 4px 4px 0;
+  padding: 4px;
+  align-items: center;
+  background-color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+
+.subheader {
   background-color: #ffffff;
   padding: 10px 20px;
 }
 
-.header-nav-menu {
+.subheader .nav-menu {
   list-style-type: none;
   display: flex;
 }
 
-.header-navmenu-li {
+.subheader .list {
   position: relative;
   margin-right: 20px;
 }
 
-.header-dropdown {
+
+.subheader .dropdown {
   display: none;
   position: absolute;
-  background-color: #ececec;
+  border: solid #A4A4A4;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: #ffffff;
   list-style-type: none;
   padding: 10px;
   margin-top: 5px;
 }
 
-.header-nav-menu li:hover .header-dropdown {
-  display: block;
-}
-
-.header-dropdown-li {
+.subheader .dropdown li {
   margin-bottom: 5px;
 }
 
-.header-footer {
+.subheader a {
+  text-decoration: none;
+}
+
+
+.subheader .nav-menu li:hover .dropdown {
+  display: block;
+}
+
+footer {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
-.header-footer-top {
+footer .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.header-footer-top i {
+footer .top i {
   margin-right: 10px;
   font-size: 24px;
 }
 
-.header-footer-bottom {
+footer .bottom {
   border-top: 1px solid #444;
   padding-top: 10px;
 }
 
-.header-logo-imgfooter {
-  height: 40px;
-  border-radius: 20%;
+
+footer .logo-img {
+  height: 28px;
+  padding-right: 5px;
   width: auto;
 }
 
-.header-sitemap-container {
+
+.sitemap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -140,52 +162,51 @@ header {
   color: #fff;
 }
 
-.header-sitemap-section {
+.sitemap .section {
   text-align: left;
-  padding-left: 100px;
+  padding-left: 20%;
 }
 
-.header-sitemap-section h3 {
+.sitemap .section h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
   color: #fff;
 }
 
-.header-sitemap-section p,
-.header-sitemap-section ul {
+.sitemap .section p,
+.sitemap .section ul {
   margin: 5px 0;
 }
 
-.header-sitemap-section ul {
+.sitemap .section ul {
   list-style: none;
   padding: 0;
 }
 
-.header-sitemap-section ul li {
+.sitemap .section ul li {
   margin-bottom: 5px;
 }
 
-.header-sitemap-section ul li a,
-.header-sitemap-section a {
+.sitemap .section ul li a,
+.sitemap .section a {
   color: #ccc;
   text-decoration: none;
 }
-
-.header-sitemap-section ul li a:hover {
+.sitemap .section ul li a:hover {
   color: #fff;
 }
 
-.header-sitemap-section form {
+.sitemap .section form {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Ajusta si quieres espacio entre el input y el botón */
 }
 
-.header-sitemap-section input[type="email"] {
+.sitemap .section input[type="email"] {
   flex-grow: 1;
   padding: 5px;
   border-color: #ffffff;
-  max-width: 200px;
+  width: 200px;
   align-self: center;
   background-color: #000000;
   border-width: 1px;
@@ -193,9 +214,8 @@ header {
   margin-left: 0px;
 }
 
-.header-sitemap-section button {
+.sitemap .section button {
   padding: 5px 10px;
-  max-width: 200px;
   align-self: center;
   border-width: 1px;
   background-color: #000000;
@@ -204,15 +224,12 @@ header {
   cursor: pointer;
 }
 
-.header-sitemap-section a {
+.sitemap .section a {
   text-decoration: none;
   color: inherit;
 }
 
-.header-div-sitemap {
-  display: flex;
-}
-.header-sitemap-section a:hover {
+.sitemap .section a:hover {
   text-decoration: underline;
 }
 
@@ -222,49 +239,64 @@ header {
     text-align: center;
   }
 
-  .header-search-bar {
+  header .header-search {
     padding-right: 13%;
     margin-bottom: 10px;
   }
 
-  .header-subheader {
-    text-align: center;
+  .header-links {
+    padding-right: 5%;
   }
 
-  .header-nav-menu {
+  .header-search input {
+    margin-left: 20%;
+    width: 100%;
+  }
+
+  header .nav-menu {
     justify-content: center;
   }
 
-  .header-footer-top {
+  .subheader {
+    text-align: center;
+  }
+
+  .subheader .list {
+    position: relative;
+    margin-right:35px;
+  }
+
+  footer .top {
     flex-direction: column;
   }
 
-  .header-footer-left,
-  .header-footer-center,
-  .header-footer-right {
+  footer .left,
+  footer .center,
+  footer .right {
     margin-bottom: 10px;
   }
 
-  .header-sitemap-container {
+  .sitemap {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .header-sitemap-section {
+  .sitemap .section {
     margin-bottom: 20px;
   }
 
-  .header-sitemap-section form {
+  .sitemap .section form {
     flex-direction: column;
   }
 
-  .header-sitemap-section input[type="email"] {
+  .sitemap .section input[type="email"] {
     margin-bottom: 10px;
+    width: 180px;
     margin-right: 26%;
   }
 
-  .header-sitemap-section button {
+  .sitemap .section button {
     margin-right: 26%;
-    width: 68%;
+    width: 180px;
   }
 }
