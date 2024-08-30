@@ -13,7 +13,6 @@
   font-family: Arial, sans-serif;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -23,46 +22,46 @@ header {
   color: #3f3f3f;
 }
 
-.logo-img {
+/** HEADER STYLES **/
+
+.header-logo-img {
   height: 55px;
   width: auto;
 }
 
-.search-bar {
+.header-search-bar {
   display: flex;
   flex: 1;
   height: 35px;
   margin: 0 20px;
 }
 
-input {
-  width: 100%;
+.header-search-input {
+  margin-left: 30%;
+  width: 50%;
   padding: 8px;
   border: none;
-  border-radius: 5px 0 0 5px;
-  box-shadow: 2px 2px 5px rgba(192, 192, 192, 0.3);
+  background-color: #dfdfdf;
 }
 
-button {
+.header-search-button {
   padding: 4px;
   padding-left: 8px;
   padding-top: 8px;
   align-items: center;
   background-color: #dfdfdf;
   border: none;
-  border-radius: 0 5px 5px 0;
-  box-shadow: 2px 2px 5px rgba(192, 192, 192, 0.3);
   cursor: pointer;
-  color:  #3f3f3f;
+  color: #3f3f3f;
 }
 
-.logo-imgnav {
+.header-logo-imgnav {
   height: 20px;
   width: auto;
   margin-right: 4px;
 }
 
-.header-links {
+.header-header-links {
   display: inline-flex;
   color: #3f3f3f;
   align-items: center;
@@ -70,28 +69,22 @@ button {
   text-decoration: none;
 }
 
-
-.subheader {
-  background-color: #ececec;
+.header-subheader {
+  background-color: #ffffff;
   padding: 10px 20px;
 }
 
-.nav-menu {
+.header-nav-menu {
   list-style-type: none;
   display: flex;
 }
 
-.navmenu-li {
+.header-navmenu-li {
   position: relative;
   margin-right: 20px;
 }
 
-a {
-  color: #1b1b1b;
-  text-decoration: none;
-}
-
-.dropdown {
+.header-dropdown {
   display: none;
   position: absolute;
   background-color: #ececec;
@@ -100,86 +93,178 @@ a {
   margin-top: 5px;
 }
 
-.nav-menu li:hover .dropdown { display: block;}
+.header-nav-menu li:hover .header-dropdown {
+  display: block;
+}
 
-.dropdown-li {
+.header-dropdown-li {
   margin-bottom: 5px;
 }
 
-.footer {
-  background-color: #ffffff;
-  color: #383838;
+.header-footer {
+  background-color: #000000;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
-.footer-top {
+.header-footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.footer-top i {
+.header-footer-top i {
   margin-right: 10px;
   font-size: 24px;
 }
 
-.footer-bottom {
+.header-footer-bottom {
   border-top: 1px solid #444;
   padding-top: 10px;
 }
 
-.sitemap {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-.sitemap-li {
-  margin: 0 15px;
-}
-
-.logo-imgfooter {
-  height: 50px;
+.header-logo-imgfooter {
+  height: 40px;
   border-radius: 20%;
   width: auto;
 }
 
+.header-sitemap-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #000;
+  padding: 40px;
+  color: #fff;
+}
+
+.header-sitemap-section {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.header-sitemap-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.header-sitemap-section p,
+.header-sitemap-section ul {
+  margin: 5px 0;
+}
+
+.header-sitemap-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header-sitemap-section ul li {
+  margin-bottom: 5px;
+}
+
+.header-sitemap-section ul li a,
+.header-sitemap-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.header-sitemap-section ul li a:hover {
+  color: #fff;
+}
+
+.header-sitemap-section form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta si quieres espacio entre el input y el botón */
+}
+
+.header-sitemap-section input[type="email"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-color: #ffffff;
+  max-width: 200px;
+  align-self: center;
+  background-color: #000000;
+  border-width: 1px;
+  flex-grow: 1;
+  margin-left: 0px;
+}
+
+.header-sitemap-section button {
+  padding: 5px 10px;
+  max-width: 200px;
+  align-self: center;
+  border-width: 1px;
+  background-color: #000000;
+  border-color: #ffffff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-sitemap-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-div-sitemap {
+  display: flex;
+}
+.header-sitemap-section a:hover {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 768px) {
   header {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .search-bar {
-      margin: 10px 0;
-  }
-
-  .subheader {
-      text-align: center;
-  }
-
-  .nav-menu {
-      justify-content: center;
-  }
-  .footer-top {
     flex-direction: column;
-}
+    text-align: center;
+  }
 
-.footer-left,
-.footer-center,
-.footer-right {
+  .header-search-bar {
+    padding-right: 13%;
     margin-bottom: 10px;
-}
+  }
 
-.sitemap {
+  .header-subheader {
+    text-align: center;
+  }
+
+  .header-nav-menu {
+    justify-content: center;
+  }
+
+  .header-footer-top {
     flex-direction: column;
-}
+  }
 
-.sitemap-li {
+  .header-footer-left,
+  .header-footer-center,
+  .header-footer-right {
     margin-bottom: 10px;
-}
+  }
 
+  .header-sitemap-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header-sitemap-section {
+    margin-bottom: 20px;
+  }
+
+  .header-sitemap-section form {
+    flex-direction: column;
+  }
+
+  .header-sitemap-section input[type="email"] {
+    margin-bottom: 10px;
+    margin-right: 26%;
+  }
+
+  .header-sitemap-section button {
+    margin-right: 26%;
+    width: 68%;
+  }
 }
