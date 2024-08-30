@@ -9,3 +9,18 @@
 .font-bold {
   font-weight: 700;
 }
+
+.text-small,
+.text-small * {
+  font-size: 12px;
+}
+
+:root {
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-size-small: 12px;
+  --font-size-medium: 20px;
+  --font-size-large: 24px;
+  --font-size-xlarge: 32px;
+}
