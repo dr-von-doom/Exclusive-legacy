@@ -1,7 +1,55 @@
 @import url("./colors.css");
 @import url("./fonts.css");
 
-.test {
-  color: var(--color-primary);
-  font-family: var(--font-primary);
+/* ==== VARIABLES ==== */
+:root {
+  --padding-small: 0.5em;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --border-radius: 4px;
+  --transition-duration: 0.5s;
 }
+
+/* ==== COMMON ==== */
+
+.remove-list-styles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-responsive-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .flex-responsive-row {
+    flex-direction: row;
+  }
+}
+
+.container-scroll {
+  overflow: auto;
+  scrollbar-color: transparent transparent;
+}
+
+.container-scroll:hover {
+  scrollbar-color: initial;
+}
+
+.container-lg {
+  max-width: 1024px;
+}
+
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
