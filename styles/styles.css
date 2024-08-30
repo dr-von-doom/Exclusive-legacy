@@ -9,9 +9,15 @@
   margin: 0;
 }
 
+.color-green {
+  color: #00ff66;
+}
+
 /* ==== PRODUCT LIST PAGE ==== */
 
-main.plp {
+main.plp .sub-header,
+main.plp .container,
+main.plp .banner .container {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -23,12 +29,12 @@ main.plp .sub-header h2 {
   margin: 0.5em 0;
 }
 
-main.plp .container {
+main.plp > .container {
   display: flex;
   flex-direction: row;
 }
 
-main.plp .container > * {
+main.plp > .container > * {
   padding: 1.5rem;
 }
 
@@ -204,7 +210,8 @@ main.plp .product .product-info .product-buy .old-price {
   text-decoration: line-through;
 }
 
-main.plp .product .product-info .product-buy button {
+main.plp .product .product-info .product-buy button,
+main.plp .banner button {
   font-weight: 500;
   color: #e8e8e8;
   background-color: #db4444;
@@ -216,6 +223,38 @@ main.plp .product .product-info .product-buy button {
   transition: 0.5s;
 }
 
-main.plp .product .product-info .product-buy button:hover {
+main.plp .product .product-info .product-buy button:hover,
+main.plp .banner button:hover {
   background-color: #00ff66;
+}
+
+main.plp .banner {
+  margin-top: 100px;
+  color: #e8e8e8;
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 1rem;
+}
+
+main.plp .banner h3 *,
+main.plp .banner h3 {
+  font-size: 32px;
+}
+
+main.plp .banner button {
+  padding: 1rem 2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+main.plp .banner .exclusive-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+main.plp .banner .exclusive-list p {
+  font-size: 12px;
+  margin: 0;
 }
