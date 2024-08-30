@@ -94,6 +94,10 @@ main.plp .filters-container .filter-options li {
   padding: var(--padding-small);
 }
 
+main.plp .filters-container .filter-options li label {
+  flex-grow: 1;
+}
+
 main.plp .filters-container .filter-options li label,
 main.plp .filters-container .filter-options li input {
   cursor: pointer;
@@ -101,7 +105,7 @@ main.plp .filters-container .filter-options li input {
 
 main.plp .filters-container .filter-options li .number-results {
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-xsmall);
 }
 
 main.plp .products-container .results-info .results-count {
@@ -156,6 +160,10 @@ main.plp .product .product-info .product-rating {
   width: fit-content;
 }
 
+main.plp .product .product-info .product-rating .rating-stars {
+  display: flex;
+}
+
 main.plp .product .product-info .product-rating .rating-value {
   font-weight: var(--font-weight-medium);
   margin-right: var(--padding-small);
@@ -204,7 +212,8 @@ main.plp .product .product-info .product-buy .old-price {
 }
 
 main.plp .product .product-info .product-buy button,
-main.plp .banner button {
+main.plp .banner button,
+main.plp .products-list button.load-more-btn {
   font-weight: var(--font-weight-medium);
   color: var(--color-gray);
   background-color: var(--color-red);
@@ -214,6 +223,19 @@ main.plp .banner button {
   padding: var(--padding-medium) var(--padding-large);
   cursor: pointer;
   transition: var(--transition-duration);
+}
+
+main.plp .products-list button.load-more-btn {
+  background-color: transparent;
+  border: 2px solid var(--color-green);
+  display: block;
+  color: black;
+  margin-top: 40px;
+}
+
+main.plp .products-list button.load-more-btn:hover {
+  background-color: var(--color-green);
+  color: white;
 }
 
 main.plp .product .product-info .product-buy button:hover,
