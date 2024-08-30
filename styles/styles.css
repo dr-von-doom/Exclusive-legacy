@@ -1,7 +1,221 @@
 @import url("./colors.css");
 @import url("./fonts.css");
 
-.test {
-  color: var(--color-primary);
-  font-family: var(--font-primary);
+/* ==== COMMON ==== */
+
+.remove-list-styles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==== PRODUCT LIST PAGE ==== */
+
+main.plp {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.plp .sub-header h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+main.plp .container {
+  display: flex;
+  flex-direction: row;
+}
+
+main.plp .container > * {
+  padding: 1.5rem;
+}
+
+main.plp .filters-container {
+  width: 25%;
+}
+
+main.plp .container-scroll {
+  overflow: auto;
+  max-height: calc(100vh - 100px);
+  scrollbar-color: transparent transparent;
+}
+
+main.plp .container-scroll:hover {
+  scrollbar-color: initial;
+}
+
+main.plp .products-container {
+  width: 75%;
+}
+
+main.plp .filters-container * {
+  font-size: 12px;
+}
+
+main.plp .filters-container .filter {
+  border: 1.5px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin: 0.5em 0;
+}
+
+main.plp .filters-container .filter-name {
+  font-weight: 500;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+main.plp .filters-container .filter-options[open] {
+  padding: 0.5em;
+}
+
+main.plp .filters-container .filter[open] .filter-name {
+  margin-bottom: 0.5em;
+}
+
+main.plp .filters-container .filter-options li {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+}
+
+main.plp .filters-container .filter-options li label {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+main.plp .filters-container .filter-options li input {
+  cursor: pointer;
+}
+
+main.plp .filters-container .filter-options li .number-results {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+main.plp .products-container .results-info {
+  display: flex;
+  direction: row;
+  width: 100%;
+}
+
+main.plp .products-container .results-info .results-count {
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+main.plp .products-container .results-info select {
+  border: 1px solid #808080;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+main.plp .products-container .products-list .product {
+  display: flex;
+  flex-direction: row;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+main.plp .products-list .product a {
+  color: inherit !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main.plp .products-list .product .product-img {
+  width: min(100%, 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+main.plp .product .product-img img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+main.plp .product .product-info {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+main.plp .product .product-info .product-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+main.plp .product .product-info .product-rating .rating-value {
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+main.plp .product .product-info .product-rating .rating-count {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+main.plp .product .product-info .product-name {
+  margin-top: 0;
+}
+
+main.plp .product .product-info .product-description * {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+main.plp .product .product-info .product-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.plp .product .product-info .product-buy .pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+main.plp .product .product-info .product-buy .price {
+  font-weight: 600;
+  font-size: 20px;
+  color: #db4444;
+}
+
+main.plp .product .product-info .product-buy .old-price {
+  font-weight: 300;
+  font-size: 12px;
+  color: #454545;
+  text-decoration: line-through;
+}
+
+main.plp .product .product-info .product-buy button {
+  font-weight: 500;
+  color: #e8e8e8;
+  background-color: #db4444;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main.plp .product .product-info .product-buy button:hover {
+  background-color: #00ff66;
 }

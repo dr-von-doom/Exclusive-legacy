@@ -4,165 +4,325 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Exclusive | Computers</title>
   </head>
   <body>
     <!-- Add header  -->
 
-    <main class="pl-page">
-      <!-- Add breadcrumb  -->
-
-      <h2>Computers</h2>
+    <main class="plp">
+      <div class="sub-header">
+        <!-- Add breadcrumb  -->
+        <h2>Computers</h2>
+      </div>
 
       <div class="container">
-        <aside class="filters">
-          <p>Filters</p>
+        <aside class="filters-container container-scroll">
+          <h3>Filters</h3>
 
-          <details open class="product-filter">
-            <summary class="product-filter-name">Brand</summary>
-            <ul class="product-filter-options">
+          <details open class="filter">
+            <summary class="filter-name">Brand</summary>
+            <ul class="filter-options remove-list-styles">
               <li>
-                <label for="brand1">Brand 1</label>
                 <input
                   type="checkbox"
                   id="brand1"
                   name="brand1"
                   value="brand1"
                 />
-                <span class="number-results">(10)</span>
+                <label for="brand1">HP</label>
+                <span class="number-results">(89)</span>
               </li>
               <li>
-                <label for="brand2">Brand 2</label>
                 <input
                   type="checkbox"
                   id="brand2"
                   name="brand2"
                   value="brand2"
                 />
-                <span class="number-results">(10)</span>
+                <label for="brand2">Apple</label>
+                <span class="number-results">(68)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand3"
+                  name="brand3"
+                  value="brand3"
+                />
+                <label for="brand3">Lenovo</label>
+                <span class="number-results">(50)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand4"
+                  name="brand4"
+                  value="brand4"
+                />
+                <label for="brand4">Asus</label>
+                <span class="number-results">(36)</span>
               </li>
             </ul>
           </details>
 
-          <details open class="product-filter">
-            <summary class="product-filter-name">Memory</summary>
-            <ul class="product-filter-options">
+          <details open class="filter">
+            <summary class="filter-name">Memory</summary>
+            <ul class="filter-options remove-list-styles">
               <li>
-                <label for="memory1">4GB</label>
                 <input
                   type="checkbox"
                   id="memory1"
                   name="memory1"
                   value="4GB"
                 />
-                <span class="number-results">(10)</span>
+                <label for="memory1">8GB</label>
+                <span class="number-results">(86)</span>
               </li>
               <li>
-                <label for="memory2">8GB</label>
                 <input
                   type="checkbox"
                   id="memory2"
                   name="memory2"
                   value="8GB"
                 />
-                <span class="number-results">(10)</span>
+                <label for="memory2">16GB</label>
+                <span class="number-results">(79)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="memory3"
+                  name="memory3"
+                  value="8GB"
+                />
+                <label for="memory3">32GB</label>
+                <span class="number-results">(23)</span>
               </li>
             </ul>
           </details>
 
-          <details class="product-filter">
-            <summary class="product-filter-name">Processors</summary>
-            <ul class="product-filter-options">
+          <details class="filter">
+            <summary class="filter-name">Processors</summary>
+            <ul class="filter-options remove-list-styles">
               <li>
-                <label for="processor1">i3</label>
                 <input
                   type="checkbox"
                   id="processor1"
                   name="processor1"
                   value="i3"
                 />
-                <span class="number-results">(10)</span>
+                <label for="processor1">Intel Core i5</label>
+                <span class="number-results">(46)</span>
               </li>
               <li>
-                <label for="processor2">i5</label>
                 <input
                   type="checkbox"
                   id="processor2"
                   name="processor2"
                   value="i5"
                 />
-                <span class="number-results">(10)</span>
+                <label for="processor2">Intel Core i7</label>
+                <span class="number-results">(32)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor3"
+                  name="processor3"
+                  value="i5"
+                />
+                <label for="processor3">Intel Core i9</label>
+                <span class="number-results">(13)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor4"
+                  name="processor4"
+                  value="i5"
+                />
+                <label for="processor4">Intel Core i9</label>
+                <span class="number-results">(13)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor5"
+                  name="processor5"
+                  value="i5"
+                />
+                <label for="processor5">Apple M3</label>
+                <span class="number-results">(20)</span>
               </li>
             </ul>
           </details>
 
-          <details>
-            <summary>Price</summary>
-            <ul>
+          <details class="filter">
+            <summary class="filter-name">Disk size</summary>
+            <ul class="filter-options remove-list-styles">
               <li>
-                <label for="price1">0 - 500</label>
-                <input
-                  type="checkbox"
-                  id="price1"
-                  name="price1"
-                  value="0-500"
-                />
+                <input type="checkbox" id="disk1" name="disk1" value="256GB" />
+                <label for="disk1">256GB</label>
                 <span class="number-results">(10)</span>
               </li>
               <li>
-                <label for="price2">500 - 1000</label>
-                <input
-                  type="checkbox"
-                  id="price2"
-                  name="price2"
-                  value="500-1000"
-                />
-                <span class="number-results">(10)</span>
+                <input type="checkbox" id="disk2" name="disk2" value="256GB" />
+                <label for="disk2">512GB</label>
+                <span class="number-results">(43)</span>
+              </li>
+              <li>
+                <input type="checkbox" id="disk3" name="disk3" value="256GB" />
+                <label for="disk3">1 TB</label>
+                <span class="number-results">(28)</span>
+              </li>
+              <li>
+                <input type="checkbox" id="disk4" name="disk4" value="256GB" />
+                <label for="disk4">2 TB</label>
+                <span class="number-results">(1)</span>
               </li>
             </ul>
           </details>
+
+          <details class="filter">
+            <summary class="filter-name">OS</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input
+                  type="checkbox"
+                  id="os1"
+                  name="os1"
+                  value="15.6"
+                />
+                <label for="os1">Windows</label>
+                <span class="number-results">(62)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="os2"
+                  name="os2"
+                  value="15.6"
+                />
+                <label for="os2">MacOS</label>
+                <span class="number-results">(20)</span>
+              </li>
+            </ul>
         </aside>
 
-        <div class="products-container">
-          <div>
-            <p>10 results out of 20</p>
-          </div>
-          <div>
-            <label for="sort">Sort by</label>
-            <select name="sort" id="sort">
-              <option value="relevance">Relevance</option>
-              <option value="starts">Starts</option>
-              <option value="newest">Newest</option>
-              <option value="price">Price (low to high)</option>
-              <option value="price">Price (high to low)</option>
-            </select>
+        <div class="products-container container-scroll">
+          <h3>Results</h3>
+          <div class="results-info">
+            <p class="results-count">10 results out of 20</p>
+            <div>
+              <label for="sort">Sort by</label>
+              <select name="sort" id="sort">
+                <option value="relevance">Relevance</option>
+                <option value="starts">Starts</option>
+                <option value="newest">Newest</option>
+                <option value="price">Price (low to high)</option>
+                <option value="price">Price (high to low)</option>
+              </select>
+            </div>
           </div>
 
           <div class="products-list">
-            <ul>
+            <ul class="remove-list-styles">
               <li>
-                <div>
+                <div class="product">
                   <div class="product-img">
-                    <img src="" alt="" />
+                    <a href="pdp.html">
+                      <img src="./images/products/product-00000000.png" alt="LENOVO 15.6 Inch Laptop IdeaPad Slim 3 Touch - Intel Core
+                      i5 - RAM 8GB - SSD 512GB - Gray" />
+                    </a>
                   </div>
                   <div class="product-info">
-                    <h3 class="product-name">Product name</h3>
-                    <p class="product-description">Product description</p>
-                    <div class="ratting">
-                      <p class="ratting-value">4.9</p>
-                      <div class="ratting-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="product-rating">
+                      <p class="rating-value">4.9</p>
+                      <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                      <p class="rating-count">(230)</p>
                     </div>
-                    <div class="pricing">
-                      <p class="old-pricing"><s>Old price</s></p>
-                      <p class="price">Price</p>
+                    <a href="pdp.html">
+                    <h4 class="product-name">
+                      LENOVO 15.6" Inch Laptop IdeaPad Slim 3 Touch - Intel Core
+                      i5 - RAM 8GB - SSD 512GB - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Full HD resolution, sharper images</li>
+                        <li>
+                          Multi-touch screen, easy interaction with your content
+                        </li>
+                        <li>
+                          MIL-STD-810H military test passed, higher durability
+                        </li>
+                        <li>TrueBlock privacy for your camera</li>
+                        <li>Fingerprint reader, easy and secure access</li>
+                      </ul>
                     </div>
-                    <button
-                      type="button"
-                      onclick="alert('Product added to cart!')"
-                    >
-                      Add to cart
-                    </button>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 535,69</p>
+                        <p class="old-price">$ 876,74</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000001.png" alt="LENOVO IdeaPad Slim 5 14 Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.6</p>
+                      <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                      <p class="rating-count">(5)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      LENOVO IdeaPad Slim 5 14" Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>HD speakers with Dolby Audio, surround sound</li>
+                        <li>Backlit keyboard, works at any time.</li>
+                        <li>Wifi 6E connectivity stability and speed for your data</li>
+                        <li>Aluminum Stamping (Sandblast Anodized)</li>
+                        <li>MIL-STD-810H military test passed, higher durability</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 560,05</p>
+                        <p class="old-price">$ 876,74</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
