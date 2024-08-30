@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Exclusive | Computers</title>
+  </head>
+  <body>
+    <!-- Add header  -->
+
+    <main class="pl-page">
+      <!-- Add breadcrumb  -->
+
+      <h2>Computers</h2>
+
+      <div class="container">
+        <aside class="filters">
+          <p>Filters</p>
+
+          <details open class="product-filter">
+            <summary class="product-filter-name">Brand</summary>
+            <ul class="product-filter-options">
+              <li>
+                <label for="brand1">Brand 1</label>
+                <input
+                  type="checkbox"
+                  id="brand1"
+                  name="brand1"
+                  value="brand1"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+              <li>
+                <label for="brand2">Brand 2</label>
+                <input
+                  type="checkbox"
+                  id="brand2"
+                  name="brand2"
+                  value="brand2"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details open class="product-filter">
+            <summary class="product-filter-name">Memory</summary>
+            <ul class="product-filter-options">
+              <li>
+                <label for="memory1">4GB</label>
+                <input
+                  type="checkbox"
+                  id="memory1"
+                  name="memory1"
+                  value="4GB"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+              <li>
+                <label for="memory2">8GB</label>
+                <input
+                  type="checkbox"
+                  id="memory2"
+                  name="memory2"
+                  value="8GB"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details class="product-filter">
+            <summary class="product-filter-name">Processors</summary>
+            <ul class="product-filter-options">
+              <li>
+                <label for="processor1">i3</label>
+                <input
+                  type="checkbox"
+                  id="processor1"
+                  name="processor1"
+                  value="i3"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+              <li>
+                <label for="processor2">i5</label>
+                <input
+                  type="checkbox"
+                  id="processor2"
+                  name="processor2"
+                  value="i5"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Price</summary>
+            <ul>
+              <li>
+                <label for="price1">0 - 500</label>
+                <input
+                  type="checkbox"
+                  id="price1"
+                  name="price1"
+                  value="0-500"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+              <li>
+                <label for="price2">500 - 1000</label>
+                <input
+                  type="checkbox"
+                  id="price2"
+                  name="price2"
+                  value="500-1000"
+                />
+                <span class="number-results">(10)</span>
+              </li>
+            </ul>
+          </details>
+        </aside>
+
+        <div class="products-container">
+          <div>
+            <p>10 results out of 20</p>
+          </div>
+          <div>
+            <label for="sort">Sort by</label>
+            <select name="sort" id="sort">
+              <option value="relevance">Relevance</option>
+              <option value="starts">Starts</option>
+              <option value="newest">Newest</option>
+              <option value="price">Price (low to high)</option>
+              <option value="price">Price (high to low)</option>
+            </select>
+          </div>
+
+          <div class="products-list">
+            <ul>
+              <li>
+                <div>
+                  <div class="product-img">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-name">Product name</h3>
+                    <p class="product-description">Product description</p>
+                    <div class="ratting">
+                      <p class="ratting-value">4.9</p>
+                      <div class="ratting-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="pricing">
+                      <p class="old-pricing"><s>Old price</s></p>
+                      <p class="price">Price</p>
+                    </div>
+                    <button
+                      type="button"
+                      onclick="alert('Product added to cart!')"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Add footer -->
+  </body>
+</html>
