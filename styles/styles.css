@@ -520,13 +520,13 @@ main.pdp .related-products .related-item {
 main.pdp .related-products .related-item img {
     max-width: 100%;
     border-radius: var(--border-radius);
-    margin-bottom: var(--padding-small);
+    margin-bottom: 0;
 }
 
 main.pdp .related-products .related-item p {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
-    margin: 0;
+    margin-bottom: 1.5em;
 }
 
 /* Responsive */
@@ -556,5 +556,14 @@ main.pdp .related-products .related-item p {
 
     main.pdp .product-images {
         margin-bottom: var(--padding-medium);
+    }
+
+    main.pdp .related-products .related-items {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    main.pdp .related-products .related-item {
+        width: 48%; /* Two items per row */
     }
 }
