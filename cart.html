@@ -5,23 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles/styles.css" />
-  <title>Exclusive</title>
+  <title>Exclusive | My cart</title>
 </head>
 
 <body>
   <!-- Header Here -->
-  <main>
-    <section class="breadcrumb">
-      <p><span>Home /</span> Cart</p>
-    </section>
+  <main class="cart-page">
+    <div class="breadcrumb breadcrumb-cart">
+      <p><span>Inicio /</span> Carrito</p>
+    </div>
     <!-- Cart Items Here -->
     <section class="cart-items-section">
       <h2>Carrito</h2>
-      <div class="item-container">
-        <div class="item">
+      <div class="item-container item-cart-container">
+        <div class="item item-cart">
           <img src="https://cosonyb2c.vtexassets.com/arquivos/ids/345373/PS5_DS_Pshot_A.jpg?v=637363940945300000"
-            alt="item" />
-          <div class="item-info">
+            alt="control-inalambrico-ps5-image" />
+          <div class="item-info item-cart-info">
             <h3>Control Inalámbrico DualSense PS5</h3>
             <details>
               <summary>Metodo de envío</summary>
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </details>
-            <div class="quantity">
+            <div class="quantity quantity-item-cart">
               <select name="quantity" id="quantity-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -49,17 +49,17 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="item-price">
+            <div class="item-price item-price-cart">
               <p>Precio</p>
               <p>$10.00</p>
             </div>
           </div>
         </div>
         <hr>
-        <div class="item">
+        <div class="item item-cart">
           <img src="https://www.lg.com/content/dam/channel/wcms/co/images/monitores/27gr75q-b_awp_escb_co_c/450.jpg"
-            alt="item" />
-          <div class="item-info">
+            alt="monitor-gamer-lg-image" />
+          <div class="item-info item-cart-info">
             <h3>Monitor Gamer LG 165hz</h3>
             <details>
               <summary>Metodo de envío</summary>
@@ -78,7 +78,7 @@
                 </div>
               </div>
             </details>
-            <div class="quantity">
+            <div class="quantity quantity-item-cart">
               <select name="quantity" id="quantity-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -87,16 +87,16 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="item-price">
+            <div class="item-price item-price-cart">
               <p>Precio</p>
               <p>$10.00</p>
             </div>
           </div>
         </div>
         <hr>
-        <div class="item">
-          <img src="https://http2.mlstatic.com/D_Q_NP_2X_699627-MCO72916025609_112023-T.webp" alt="item" />
-          <div class="item-info">
+        <div class="item item-cart">
+          <img src="https://http2.mlstatic.com/D_Q_NP_2X_699627-MCO72916025609_112023-T.webp" alt="g-pro-superlight-image" />
+          <div class="item-info item-cart-info">
             <h3>Logitech G Pro X Superlight</h3>
             <details>
               <summary>Metodo de envío</summary>
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </details>
-            <div class="quantity">
+            <div class="quantity quantity-item-cart">
               <select name="quantity" id="quantity-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -124,7 +124,7 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <div class="item-price">
+            <div class="item-price item-price-cart">
               <p>Precio</p>
               <p>$10.00</p>
             </div>
@@ -133,7 +133,7 @@
       </div>
     </section>
     <!-- Pay Section Here -->
-    <section class="pay-section">
+    <section class="pay-section pay-section-cart">
       <h2>Resumen de compra</h2>
       <div class="subtotal pay-info">
         <p>Subtotal</p>
@@ -164,64 +164,94 @@
     <!-- Recommended Items Here -->
     <section class="recommended-items-section">
       <h2>Productos que podrian gustarte</h2>
-      <div class="back-btn">
-        <img src="/img/flechas-derechas.png" alt="back">
+      <div class="back-btn back-btn-cart">
+        <img src="/images/icons/flechas-derechas.png" alt="back-btn-image">
       </div>
       <div class="recommended-items-container">
         <div class="recommended-item">
-          <div class="sale">
+          <div class="sale sale-recommended-product">
             <p>50%</p>
           </div>
-          <img src="https://http2.mlstatic.com/D_NQ_NP_924611-MLU69395908864_052023-O.webp" alt="item" />
+          <img src="https://http2.mlstatic.com/D_NQ_NP_924611-MLU69395908864_052023-O.webp" alt="laptod-gamer-asus-rog-image" />
           <p>Laptop Gamer Asus Rog Strix</p>
-          <div class="rate">
-            <img src="/img/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="rate">
+          <div class="rate-recommended-product">
+            <div class="stars-cart">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+            </div>
             <p>80</p>
           </div>
-          <p class="price new-price"><b>$5.00 <del>$10.00</del></b></p>
+          <p class="price new-price price-recommended-product"><b>$5.00 <del>$10.00</del></b></p>
         </div>
         <div class="recommended-item">
-          <img src="https://servisistemas.com.co/317/teclado-mecanico-gamer-corsair-led-cherry-ch-910d029-sp.jpg" alt="item" />
+          <img src="https://servisistemas.com.co/317/teclado-mecanico-gamer-corsair-led-cherry-ch-910d029-sp.jpg" alt="teclado-gamer-corsair-image" />
           <p>Teclado Gamer Corsair Led - Cherry </p>
-          <div class="rate">
-            <img src="/img/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="rate">
+          <div class="rate-recommended-product">
+            <div class="stars-cart">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+            </div>
             <p>80</p>
           </div>
-          <p class="price"><b>$10.00</b></p>
+          <p class="price price-recommended-product"><b>$10.00</b></p>
         </div>
         <div class="recommended-item">
-          <div class="sale">
+          <div class="sale sale-recommended-product">
             <p>50%</p>
           </div>
-          <img src="https://http2.mlstatic.com/D_NQ_NP_866748-MLA48049744964_102021-O.webp" alt="item" />
+          <img src="https://http2.mlstatic.com/D_NQ_NP_866748-MLA48049744964_102021-O.webp" alt="memoria-ram-vengeance-image" />
           <p>Memoria RAM Vengeance RGB Pro 32GB</p>
-          <div class="rate">
-            <img src="/img/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="rate">
+          <div class="rate-recommended-product">
+            <div class="stars-cart">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+            </div>
             <p>80</p>
           </div>
-          <p class="price new-price"><b>$5.00 <del>$10.00</del></b></p>
+          <p class="price new-price price-recommended-product"><b>$5.00 <del>$10.00</del></b></p>
         </div>
         <div class="recommended-item">
-          <img src="https://m.media-amazon.com/images/I/41V90Lai2wL._SY445_SX342_QL70_FMwebp_.jpg" alt="item" />
+          <img src="https://m.media-amazon.com/images/I/41V90Lai2wL._SY445_SX342_QL70_FMwebp_.jpg" alt="refrigeracion-liquida-corsair-image" />
           <p>Corsair Enfriador líquido H100x RGB Elite</p>
-          <div class="rate">
-            <img src="/img/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="rate">
+          <div class="rate-recommended-product">
+            <div class="stars-cart">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+            </div>
             <p>80</p>
           </div>
-          <p class="price"><b>$10.00</b></p>
+          <p class="price price-recommended-product"><b>$10.00</b></p>
         </div>
         <div class="recommended-item">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_818437-MLA51636738692_092022-O.webp" alt="item" />
+          <img src="https://http2.mlstatic.com/D_NQ_NP_818437-MLA51636738692_092022-O.webp" alt="motherboard-gamer-asus-tuf-image" />
           <p>Motherboard Gamer Asus Tuf X570 Plus</p>
-          <div class="rate">
-            <img src="/img/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="rate">
+          <div class="rate-recommended-product">
+            <div class="stars-cart">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+              <img src="/images/icons/star.svg" alt="star-image">
+            </div>
             <p>80</p>
           </div>
-          <p class="price"><b>$10.00</b></p>
+          <p class="price price-recommended-product"><b>$10.00</b></p>
         </div>
       </div>
-      <div class="next-btn">
-        <img src="/img/flechas-derechas.png" alt="next">
+      <div class="next-btn next-btn-cart">
+        <img src="/images/icons/flechas-derechas.png" alt="next-btn-image">
       </div>
     </section>
   </main>
