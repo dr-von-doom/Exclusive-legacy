@@ -1,3 +1,4 @@
+/* ==== COMMON ==== */
 @import url("./colors.css");
 @import url("./fonts.css");
 
@@ -18,7 +19,7 @@ main.cart-page {
   padding: 32px;
 }
 
-.cart-page h2 {
+.cart-page h2, .recommended-items-section h2 {
   font-weight: 600;
 }
 
@@ -54,7 +55,7 @@ main.cart-page {
   position: relative;
 }
 
-hr {
+.item-container.item-cart-container hr {
   border: none;
   border: 1px solid #e4e4e4e4;
 }
@@ -73,6 +74,7 @@ hr {
 
 .item-info.item-cart-info>h3 {
   font-weight: 300;
+  cursor: pointer;
 }
 
 .item-price.item-price-cart {
@@ -95,6 +97,7 @@ hr {
 .shipping-method {
   font-size: var(--small-poppins);
   font-weight: 300;
+  margin: 4px 0;
 }
 
 .item-info.item-cart-info details {
@@ -247,6 +250,7 @@ hr {
     text-align: center;
     padding: 20px 30px;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .sale.sale-recommended-product {
