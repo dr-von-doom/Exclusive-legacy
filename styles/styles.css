@@ -4,10 +4,64 @@
 /* ========================== HOME PAGE ================= */
 
 
+
+/* ==== MOBILE ==== */
+
+@media (max-width: 567px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .poppins-style {
+    text-align: center;
+  }
+
+  .banner-style {
+    height: auto;
+    padding: 20px;
+  }
+
+  .home-page .image-container img {
+    width: 170px;
+    height: 150px;
+  }
+  
+  .home-page .text-img-container {
+    justify-content: center;
+    width: fit-content;
+    padding: 10px;
+  }
+
+  #title-banner {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+  }
+
+  .icons-style {
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .custom-icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .title-products{
+    font-size: 30px;
+  }
+
+  .banner-style .poppins-style {
+    font-size: 12px;
+  }
+}
+
+/* ==== DESKTOP ==== */
 body {
   /* ==== COMMON ==== */
   font-family: var(--font-primary);
   padding: 30px;
+  margin: 0;
 }
 
 /* ==== ADS (FIRST SECTION) ==== */
@@ -23,7 +77,7 @@ body {
   max-width: 100%;
   border-radius: 20px;
   /* ==== COMMON ==== */
-  box-shadow: 0 4px 8px var(--color-neutral-grey);
+  box-shadow: 0 4px 8px var(--color-grey);
 }
 
 /* ==== GRIDS (SECOND SECTION) ==== */
@@ -44,14 +98,6 @@ body {
   font-size: var(--title-poppins);
 }
 
-/* Badge at the top of the product box */
-.discount-badge {
-  /* ==== COMMON ==== */
-  background-color: var(--color-primary-red);
-  color: var(--color-neutral-white);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 
 /* Product Box */
 .product-box {
@@ -60,9 +106,22 @@ body {
   align-items: center;
   border-radius: 10px;
   /* ==== COMMON ==== */
-  background-color: var(--color-neutral-white);
-  box-shadow: 0 4px 8px var(--color-neutral-grey);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 8px var(--color-grey);
   padding: 20px 0 10px 0;
+  position: relative;
+}
+
+/* Badge at the top of the product box */
+.discount-badge {
+  /* ==== COMMON ==== */
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .product-box img {
@@ -101,7 +160,7 @@ body {
 .price-normal {
   text-decoration: line-through;
   /* ==== COMMON ==== */
-  color: var(--color-neutral-grey);
+  color: var(--color-grey);
 }
 
 .price-discount {
@@ -113,7 +172,7 @@ body {
 .text-container button {
   /* ==== COMMON ==== */
   background-color: var(--color-primary-red);
-  color: var(--color-neutral-white);
+  color: var(--color-white);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -148,7 +207,7 @@ body {
 /* Subtitle at the top of the banner */
 .banner-style .poppins-style {
   /* ==== COMMON ==== */
-  color: var(--color-neutral-white);
+  color: var(--color-white);
   font-weight: 300;
   /* ==== COMMON ==== */
   font-size: var(--subtitle-banner);
@@ -198,7 +257,7 @@ body {
   width: 30px;
   height: 30px;
   /* ==== COMMON ==== */
-  fill: var(--color-neutral-white);
+  fill: var(--color-white);
 }
 
 /* Image Container */
@@ -221,16 +280,5 @@ body {
 .click-shop-container {
   display: flex;
   flex-direction: row;
-}
-
-/* ==== RESPONSIVE ==== */
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .banner-style {
-    height: auto;
-    padding: 20px 10px;
-  }
+  align-items: center;
 }

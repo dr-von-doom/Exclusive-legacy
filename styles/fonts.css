@@ -6,8 +6,8 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Inter", sans-serif;
   --font-third: "Big Shoulders Inline Text", sans-serif;
-  --title-poppins: 40px;
-  --h3-poppins: 20px;
+  --title-poppins: 40px; /*Text "Best Selling products and Title banner*/
+  --h3-poppins: 20px; /*Text in product box*/
   --button-cart: 12px;
-  --subtitle-banner: 16px;
+  --subtitle-banner: 16px; 
 }
