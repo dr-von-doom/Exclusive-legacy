@@ -1,5 +1,6 @@
 {
   "cSpell.enabled": true,
   "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.port": 5501
 }
