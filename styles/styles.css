@@ -2,6 +2,8 @@
 @import url("./fonts.css");
 
 /* ========================== HOME PAGE ================= */
+
+
 body {
   /* ==== COMMON ==== */
   font-family: var(--font-primary);
@@ -31,10 +33,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
-/*Title best selling products */
+/* Title for Best Selling Products */
 
 .title-products {
   font-weight: 600;
@@ -42,7 +44,7 @@ body {
   font-size: var(--title-poppins);
 }
 
-/*Badge at the top of the product box*/
+/* Badge at the top of the product box */
 .discount-badge {
   /* ==== COMMON ==== */
   background-color: var(--color-primary-red);
@@ -51,7 +53,7 @@ body {
   border-radius: 5px;
 }
 
-/*Product box*/
+/* Product Box */
 .product-box {
   display: flex;
   flex-direction: column;
@@ -69,7 +71,7 @@ body {
   height: 170px;
 }
 
-/*Text in the product box*/
+/* Text in the Product Box */
 .home-page .text-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +120,7 @@ body {
   /* ==== COMMON ==== */
   font-size: var(--button-cart);
   font-family: var(--font-primary);
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
   width: fit-content;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -143,7 +145,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Subtitle at the top of the banner*/
+/* Subtitle at the top of the banner */
 .banner-style .poppins-style {
   /* ==== COMMON ==== */
   color: var(--color-neutral-white);
@@ -154,7 +156,7 @@ body {
   margin: 10px;
 }
 
-/* Container text-icons-img*/
+/* Container for text, icons, and image */
 .home-page .text-img-container {
   display: flex;
   flex-direction: row;
@@ -163,7 +165,7 @@ body {
   width: 100%;
 }
 
-/* Container text-icons*/
+/* Container for text and icons */
 .home-page .title-icons-container {
   display: flex;
   flex-direction: column;
@@ -171,7 +173,7 @@ body {
   justify-content: flex-start;
 }
 
-/*Text in the container*/
+/* Text in the container */
 #title-banner {
   font-weight: 600;
   /* ==== COMMON ==== */
@@ -183,7 +185,7 @@ body {
   margin: 0;
 }
 
-/*Icons*/
+/* Icons */
 .icons-style {
   display: flex;
   flex-direction: row;
@@ -199,7 +201,7 @@ body {
   fill: var(--color-neutral-white);
 }
 
-/*Img container*/
+/* Image Container */
 .home-page .image-container {
   display: flex;
   align-items: center;
@@ -210,11 +212,12 @@ body {
   height: 200px;
 }
 
-/*Text "Shop Now"*/
+/* Text "Shop Now" */
 .style-shop {
   text-decoration: underline;
 }
-/*Container text "Shop Now" and icon*/
+
+/* Container for "Shop Now" text and icon */
 .click-shop-container {
   display: flex;
   flex-direction: row;
