@@ -67,6 +67,29 @@ h6 {
   font-family: "Inter", sans-serif;
 }
 
+/* Breadcrumb */
+
+.breadcrumb.breadcrumb-cart {
+  grid-row: 1 / 2;
+}
+
+.breadcrumb a {
+  color: var(--color-neutral-grey);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-red);
+}
+
+.breadcrumb a:not(:last-child) {
+  color: #878787;
+}
+
+.breadcrumb a:not(:last-child)::after {
+  content: " / ";
+}
+
 /* ==== HEADER ==== */
 
 header {
