@@ -98,23 +98,30 @@ main.pdp > .container > * {
     padding: var(--padding-large);
 }
 
+main.pdp .product-display {
+    display: flex;
+    flex-direction: row;
+    gap: var(--padding-medium);
+    align-items: center; /* Vertically center product info with the main image */
+}
+
 main.pdp .product-images {
     display: flex;
-    gap: var(--padding-medium);
+    gap: var(--padding-small);
 }
 
 main.pdp .product-images .main-image {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--border-radius);
+    flex-grow: 1;
 }
 
 main.pdp .product-images .main-image img.main-img {
     width: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: var(--border-radius);
 }
@@ -127,11 +134,16 @@ main.pdp .product-images .thumbnail-images {
 }
 
 main.pdp .product-images .thumbnail-images img.thumbnail-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: var(--border-radius);
     cursor: pointer;
+}
+
+main.pdp .product-info {
+    max-width: 400px;
+    width: 100%;
 }
 
 main.pdp .product-options {
@@ -159,6 +171,7 @@ main.pdp .product-options select {
 
 main.pdp .purchase-options {
     display: flex;
+    flex-direction: column;
     gap: var(--padding-small);
     margin-top: var(--padding-medium);
 }
@@ -173,6 +186,7 @@ main.pdp .purchase-options .btn-add-to-cart {
     padding: var(--padding-medium) var(--padding-large);
     cursor: pointer;
     transition: var(--transition-duration);
+    width: 100%;
 }
 
 main.pdp .purchase-options .btn-buy-now:hover,
@@ -200,13 +214,13 @@ main.pdp .technical-specifications td {
 
 main.pdp .related-products .related-items {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure all related products are on the same line */
     gap: var(--padding-medium);
 }
 
 main.pdp .related-products .related-item {
     text-align: center;
-    width: calc(25% - var(--padding-small));
+    width: 22%; /* Ensure four items fit in one row */
 }
 
 main.pdp .related-products .related-item img {
