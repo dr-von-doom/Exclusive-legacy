@@ -364,6 +364,10 @@ main.plp .product .product-info {
   margin: var(--padding-small) 0;
 }
 
+main.plp .product .product-info {
+  padding: var(--padding-medium);
+}
+
 main.plp .sub-header h2 {
   font-size: var(--font-size-xlarge);
   padding: 1rem;
@@ -544,25 +548,31 @@ main.plp .banner {
   color: var(--color-gray);
   background-color: #0d0d0d;
   text-align: center;
-  padding: var(--padding-medium);
+  padding: var(--padding-large);
+}
+
+main.plp .banner h3 {
+  margin: 2rem 1rem;
 }
 
 main.plp .banner button {
-  padding: var(--padding-large) var(--padding-large * 2);
+  padding: var(--padding-large) calc(var(--padding-large) * 2);
   margin: var(--padding-medium) 0 var(--padding-large) 0;
 }
 
 main.plp .banner .exclusive-list {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: var(--padding-medium);
-  margin-top: var(--padding-medium);
+  gap: 3rem;
+  margin: 30px 0;
+  font-size: var(--font-size-large);
+}
+
+main.plp .banner .exclusive-list li {
+  flex: 1 1 0px;
 }
 
 main.plp .banner .exclusive-list p {
-  font-size: var(--font-size-small);
-  margin: 0;
+  margin: 0.5rem;
 }
 
 /* Responsive  */
