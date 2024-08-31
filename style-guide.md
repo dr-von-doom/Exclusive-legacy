@@ -7,13 +7,13 @@
 
 ## Typography
 
-- h1: Inter Semibold 48px
-- h2: Inter Semibold 36px
-- h3: Inter Semibold 32px
-- h4: Inter Semibold 24px
-- h5: Inter 20px
-- Body: Poppins 16px
-- Buttons: Poppins Medium 16px
+- h1: Inter Semibold 32px
+- h2: Inter Semibold 24px
+- h3: Inter Semibold 20px
+- h4: Inter Semibold 16px
+- h5: Inter Semibold 24px
+- Body: Poppins 14px
+- Buttons: Poppins Medium 14px
 - Small: Poppins 12px
 
 ## Colors
