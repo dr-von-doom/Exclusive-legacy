@@ -2,7 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&display=swap");
 
+* {
+  font-family: "Intern", sans-serif;
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-small,
+.text-small * {
+  font-size: 12px;
+}
+
 :root {
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-size-xsmall: 10px;
+  --font-size-small: 12px;
+  --font-size-medium: 20px;
+  --font-size-large: 24px;
+  --font-size-xlarge: 32px;
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Inter", sans-serif;
   --font-third: "Big Shoulders Inline Text", sans-serif;
