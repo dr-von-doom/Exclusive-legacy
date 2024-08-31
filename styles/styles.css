@@ -7,8 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--color-primary);
-  font-family: var(--font-primary);
 }
 
 /* ==== HEADER ==== */
@@ -136,6 +134,7 @@ footer .logo-img {
   height: 28px;
   padding-right: 5px;
   width: auto;
+  margin-top: 5px;
 }
 
 .sitemap {
@@ -263,6 +262,15 @@ input[type="text"]:focus {
   footer .center,
   footer .right {
     margin-bottom: 0;
+  }
+
+  footer .center, footer .right {
+    display: flex;
+    gap: 30px;
+  }
+
+  footer .left {
+    margin-right: 6%;
   }
 
   .sitemap {
