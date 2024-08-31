@@ -355,12 +355,12 @@ input[type="text"]:focus {
 main.pdp .product-info h1,
 main.pdp .product-info p {
     font-weight: var(--font-weight-medium);
-    font-family: "Inter", sans-serif;
     margin: var(--padding-small) 0;
 }
 
 main.pdp .product-info h1.product-title {
     font-size: var(--font-size-xlarge);
+    font-family: "Inter", sans-serif;
 }
 
 main.pdp .product-info .price {
@@ -493,6 +493,7 @@ main.pdp .related-products h2 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-medium);
     margin-bottom: var(--padding-medium);
+    font-family: "Inter", sans-serif;
 }
 
 main.pdp .technical-specifications table {
