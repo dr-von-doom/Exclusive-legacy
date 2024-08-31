@@ -253,3 +253,14 @@ main.pdp .related-products .related-item p {
         justify-content: space-between;
     }
 }
+
+/* For small screens */
+@media (max-width: 576px) {
+    main.pdp .product-display {
+        flex-direction: column;
+    }
+
+    main.pdp .product-images {
+        margin-bottom: var(--padding-medium);
+    }
+}
