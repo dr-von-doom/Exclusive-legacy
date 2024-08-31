@@ -49,13 +49,22 @@ body {
   scrollbar-color: initial;
 }
 
-.container-lg {
-  max-width: 1024px;
+.container-xl {
+  max-width: 1280px;
 }
 
 .margin-x-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
 }
 
 /* ==== HEADER ==== */
@@ -348,18 +357,21 @@ input[type="text"]:focus {
 /* ==== PRODUCT LIST PAGE ==== */
 
 main.plp .sub-header h2,
-main.plp h3 {
+main.plp h3,
+main.plp .products-container .results-info .results-count,
+main.plp .product .product-info {
   font-weight: var(--font-weight-medium);
-  font-family: "Inter", sans-serif;
   margin: var(--padding-small) 0;
 }
 
 main.plp .sub-header h2 {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xlarge);
+  padding: 1rem;
 }
 
-main.plp h3 {
-  font-size: var(--font-size-medium);
+main.plp h3,
+main.plp .banner h3 * {
+  font-size: var(--font-size-large);
 }
 
 main.plp > .container > * {
@@ -387,7 +399,9 @@ main.plp .filters-container .filter-options li {
   padding: var(--padding-small);
 }
 
-main.plp .filters-container .filter-options li label {
+main.plp .filters-container .filter-options li label,
+main.plp .products-container .results-info .results-count,
+main.plp .product .product-info {
   flex-grow: 1;
 }
 
@@ -399,11 +413,6 @@ main.plp .filters-container .filter-options li input {
 main.plp .filters-container .filter-options li .number-results {
   font-weight: var(--font-weight-light);
   font-size: var(--font-size-xsmall);
-}
-
-main.plp .products-container .results-info .results-count {
-  font-weight: var(--font-weight-medium);
-  flex-grow: 1;
 }
 
 main.plp .products-container .results-info select {
@@ -440,11 +449,6 @@ main.plp .product .product-img img {
   object-fit: cover;
 }
 
-main.plp .product .product-info {
-  flex-grow: 1;
-  padding: var(--padding-medium);
-}
-
 main.plp .product .product-info .product-rating {
   display: flex;
   flex-direction: row;
@@ -473,7 +477,6 @@ main.plp .product .product-info .product-name {
 
 main.plp .product .product-info .product-description * {
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-small);
 }
 
 main.plp .product .product-info .product-buy {
@@ -542,10 +545,6 @@ main.plp .banner {
   background-color: #0d0d0d;
   text-align: center;
   padding: var(--padding-medium);
-}
-
-main.plp .banner h3 * {
-  font-size: var(--font-size-xlarge);
 }
 
 main.plp .banner button {
