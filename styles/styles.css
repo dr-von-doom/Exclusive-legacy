@@ -42,6 +42,10 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  color: #DB4444;
+}
+
 
 .header-search input {
   border-radius: 4px 0 0 4px;
@@ -88,7 +92,7 @@ header a {
   background-color: #ffffff;
   list-style-type: none;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .subheader .dropdown li {
@@ -97,6 +101,12 @@ header a {
 
 .subheader a {
   text-decoration: none;
+  color: #000;
+}
+
+
+.subheader a:hover {
+  color: #DB4444;
 }
 
 .subheader .nav-menu li:hover .dropdown {
