@@ -7,20 +7,20 @@
 
 /* ==== MOBILE ==== */
 @media (max-width: 576px) { 
-  .grid-container {
+  .home-page .grid-container {
     grid-template-columns: 1fr;
   }
 
-  .poppins-style {
+  .home-page .poppins-style {
     text-align: center;
   }
 
-  #title-banner {
+  .home-page #title-banner {
     text-align: center;
     font-size: 20px;
   }
 
-  .icons-style {
+  .home-page .icons-style {
     margin: 1rem auto; 
     gap: 10px;
   }
@@ -127,30 +127,30 @@ body {
   width: max-content;
 }
 
-.price-container {
+.home-page .price-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin: 0;
 }
 
-.price-container p {
+.home-page .price-container p {
   margin: 0;
 }
 
-.price-normal {
+.home-page .price-normal {
   text-decoration: line-through;
   /* ==== COMMON ==== */
   color: var(--color-grey);
 }
 
-.price-discount {
+.home-page .price-discount {
   /* ==== COMMON ==== */
   color: var(--color-primary-green);
   font-weight: bold;
 }
 
-.text-container button {
+.home-page .text-container button {
   /* ==== COMMON ==== */
   background-color: var(--color-primary-red);
   color: var(--color-white);
@@ -166,7 +166,7 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.text-container button:hover {
+.home-page .text-container button:hover {
   /* ==== COMMON ==== */
   background-color: var(--color-secondary-light-red);
   transform: scale(1.05);
@@ -175,7 +175,7 @@ body {
 /* ==== BANNER (THIRD SECTION) ==== */
 
 
-.banner-style {
+.home-page .banner-style {
   /* ==== COMMON ==== */
   background-color: var(--color-neutral-black);
   width: 100%;
@@ -216,7 +216,7 @@ body {
 }
 
 /* Text in the container */
-#title-banner {
+.home-page #title-banner {
   font-weight: 600;
   /* ==== COMMON ==== */
   font-size: var(--title-poppins);
