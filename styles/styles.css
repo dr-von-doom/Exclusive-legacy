@@ -1426,6 +1426,16 @@ main.cart-page p {
   margin: 0;
 }
 
+main.cart-page a {
+  text-decoration: none;
+  color: #000;
+}
+
+main.cart-page a>h3 {
+  text-decoration: none;
+  font-weight: 300;
+}
+
 main.cart-page h3 {
   margin: 0;
 }
