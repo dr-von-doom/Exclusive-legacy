@@ -4,6 +4,16 @@
   --color-secondary-light-red: #E07575;
   --color-secondary-light-blue: #A0BCE0;
   --color-neutral-white: #FAFAFA;
+  --color-white: #ffffff;
   --color-neutral-grey: #7D8184;
+  --color-grey: #c6cacd;
   --color-neutral-black: #0D0D0D;
+  --color-green: #00ff66;
+  --color-red: #db4444;
+  --color-gray: #e8e8e8;
+  --color-dark-gray: #454545;
+}
+
+.color-green {
+  color: var(--color-green);
 }
