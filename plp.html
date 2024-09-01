@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Exclusive | Computers</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img class="logo-img" src="images/icons/logo.svg" alt="search" />
+      </div>
+      <div class="header-search">
+        <input type="text" placeholder="What are you looking for?" />
+        <button>
+          <img src="images/icons/search.svg" alt="search" />
+        </button>
+      </div>
+      <div class="header-links">
+        <a href="#">
+          <img src="images/icons/account.svg" alt="account" /> Account
+        </a>
+        <a href="#"> <img src="images/icons/cart.svg" alt="cart" /> Cart </a>
+      </div>
+    </header>
+
+    <nav class="subheader">
+      <ul class="nav-menu">
+        <li class="list">
+          <a>Technology</a>
+          <ul class="dropdown">
+            <li><a href="plp.html">Computers</a></li>
+            <li><a href="#">Televisions</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Printing</a></li>
+            <li><a href="#">Cameras</a></li>
+          </ul>
+          </li>
+          <li class="list">
+            <a>Appliances</a>
+            <ul class="dropdown">
+              <li><a href="#">Air Conditioning</a></li>
+              <li><a href="#">Refrigeration</a></li>
+              <li><a href="#">Washing Machines/Dryers</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <a>Mobile Phones</a>
+            <ul class="dropdown">
+              <li><a href="#">Mobile Phones</a></li>
+              <li><a href="#">Tablets</a></li>
+              <li><a href="#">Smartwatches</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <a>Home</a>
+            <ul class="dropdown">
+              <li><a href="#">Living Room</a></li>
+              <li><a href="#">Dining Room</a></li>
+              <li><a href="#">Kitchen</a></li>
+              <li><a href="#">Bathroom</a></li>
+            </ul>
+          </li>
+          
+      </ul>
+    </nav>
+
+    <main class="plp">
+      <div class="sub-header container-xl margin-x-auto">
+        <div class="breadcrumb breadcrumb-cart">
+            <a href="#">Technology</a>
+            <a href="plp.html">Computers</a>
+        </div>
+        <h2>Computers</h2>
+      </div>
+
+      <div class="container flex-responsive-row container-xl margin-x-auto">
+        <aside class="filters-container container-scroll">
+          <h3>Filters</h3>
+
+          <details open class="filter">
+            <summary class="filter-name">Brand</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand1"
+                  name="brand1"
+                  value="brand1"
+                />
+                <label for="brand1">HP</label>
+                <span class="number-results">(89)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand2"
+                  name="brand2"
+                  value="brand2"
+                />
+                <label for="brand2">Apple</label>
+                <span class="number-results">(68)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand3"
+                  name="brand3"
+                  value="brand3"
+                />
+                <label for="brand3">Lenovo</label>
+                <span class="number-results">(50)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="brand4"
+                  name="brand4"
+                  value="brand4"
+                />
+                <label for="brand4">Asus</label>
+                <span class="number-results">(36)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details open class="filter">
+            <summary class="filter-name">Memory</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input
+                  type="checkbox"
+                  id="memory1"
+                  name="memory1"
+                  value="4GB"
+                />
+                <label for="memory1">8GB</label>
+                <span class="number-results">(86)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="memory2"
+                  name="memory2"
+                  value="8GB"
+                />
+                <label for="memory2">16GB</label>
+                <span class="number-results">(79)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="memory3"
+                  name="memory3"
+                  value="8GB"
+                />
+                <label for="memory3">32GB</label>
+                <span class="number-results">(23)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details class="filter">
+            <summary class="filter-name">Processors</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor1"
+                  name="processor1"
+                  value="i3"
+                />
+                <label for="processor1">Intel Core i5</label>
+                <span class="number-results">(46)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor2"
+                  name="processor2"
+                  value="i5"
+                />
+                <label for="processor2">Intel Core i7</label>
+                <span class="number-results">(32)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor3"
+                  name="processor3"
+                  value="i5"
+                />
+                <label for="processor3">Intel Core i9</label>
+                <span class="number-results">(13)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor4"
+                  name="processor4"
+                  value="i5"
+                />
+                <label for="processor4">Intel Core i9</label>
+                <span class="number-results">(13)</span>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="processor5"
+                  name="processor5"
+                  value="i5"
+                />
+                <label for="processor5">Apple M3</label>
+                <span class="number-results">(20)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details class="filter">
+            <summary class="filter-name">Disk size</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input type="checkbox" id="disk1" name="disk1" value="256GB" />
+                <label for="disk1">256GB</label>
+                <span class="number-results">(10)</span>
+              </li>
+              <li>
+                <input type="checkbox" id="disk2" name="disk2" value="256GB" />
+                <label for="disk2">512GB</label>
+                <span class="number-results">(43)</span>
+              </li>
+              <li>
+                <input type="checkbox" id="disk3" name="disk3" value="256GB" />
+                <label for="disk3">1 TB</label>
+                <span class="number-results">(28)</span>
+              </li>
+              <li>
+                <input type="checkbox" id="disk4" name="disk4" value="256GB" />
+                <label for="disk4">2 TB</label>
+                <span class="number-results">(1)</span>
+              </li>
+            </ul>
+          </details>
+
+          <details class="filter">
+            <summary class="filter-name">OS</summary>
+            <ul class="filter-options remove-list-styles">
+              <li>
+                <input
+                  type="checkbox"
+                  id="os1"
+                  name="os1"
+                  value="15.6"
+                />
+                <label for="os1">Windows</label>
+                <span class="number-results">(62)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="os2"
+                  name="os2"
+                  value="15.6"
+                />
+                <label for="os2">MacOS</label>
+                <span class="number-results">(20)</span>
+              </li>
+            </ul>
+        </aside>
+
+        <div class="products-container container-scroll">
+          <h3>Results</h3>
+          <div class="results-info flex-responsive-row">
+            <p class="results-count">10 results out of 20</p>
+            <div>
+              <label for="sort">Sort by</label>
+              <select name="sort" id="sort">
+                <option value="relevance">Relevance</option>
+                <option value="starts">Starts</option>
+                <option value="newest">Newest</option>
+                <option value="price">Price (low to high)</option>
+                <option value="price">Price (high to low)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-list">
+            <ul class="remove-list-styles">
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="pdp.html">
+                      <img src="./images/products/product-00000000.png" alt="LENOVO 15.6 Inch Laptop IdeaPad Slim 3 Touch - Intel Core
+                      i5 - RAM 8GB - SSD 512GB - Gray" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.9</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star-half-empty.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(230)</p>
+                    </div>
+                    <a href="pdp.html">
+                    <h4 class="product-name">
+                      LENOVO 15.6" Inch Laptop IdeaPad Slim 3 Touch - Intel Core
+                      i5 - RAM 8GB - SSD 512GB - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Full HD resolution, sharper images</li>
+                        <li>
+                          Multi-touch screen, easy interaction with your content
+                        </li>
+                        <li>
+                          MIL-STD-810H military test passed, higher durability
+                        </li>
+                        <li>TrueBlock privacy for your camera</li>
+                        <li>Fingerprint reader, easy and secure access</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 535,69</p>
+                        <p class="old-price">$ 876,74</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000001.png" alt="LENOVO IdeaPad Slim 5 14 Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.6</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star-half-empty.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(5)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      LENOVO IdeaPad Slim 5 14" Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>HD speakers with Dolby Audio, surround sound</li>
+                        <li>Backlit keyboard, works at any time.</li>
+                        <li>Wifi 6E connectivity stability and speed for your data</li>
+                        <li>Aluminum Stamping (Sandblast Anodized)</li>
+                        <li>MIL-STD-810H military test passed, higher durability</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 560,05</p>
+                        <p class="old-price">$ 876,74</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000002.png" alt="LENOVO IdeaPad Slim 5 14 Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">5</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(2)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      LENOVO IdeaPad Slim 5 14" Inch Laptop 14IAH8 - Intel Core i5 - RAM 16GB - SSD 512GB - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Better images thanks to its Intel Iris X graphics</li>
+                        <li>Energy savings, thanks to its ENERGY STAR Certification</li>
+                        <li>Great setup built to give you speed and efficiency</li>
+                        <li>Battery life up to 8 hours 30 minutes</li>
+                        <li>Better connectivity thanks to its Realtek wireless card</li>
+                        </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 569,92</p>
+                        <p class="old-price">$ 878,06</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000003.png" alt="ASUS Vivobook 15.6 Inch Laptop X1504ZA - Intel Core i5 - 8GB RAM - 1 TB SSD - Blue" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.7</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star-half-empty.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(29)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      ASUS Vivobook 15.6" Inch Laptop X1504ZA - Intel Core i5 - 8GB RAM - 1 TB SSD - Blue
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Includes backpack and optical mouse</li>
+                        <li>Thinner and lighter design with only 1.7 kg of weight</li>
+                        <li>Noise cancellation by Artificial Intelligence: clearer video conferences</li>
+                        <li>Longer lifespan with Military Grade 810H certification</li>
+                        <li>Protect and take care of your health with Asus antimicrobial guard Plus</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 460,74</p>
+                        <p class="old-price">$ 812,55</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000004.png" alt="ASUS Vivobook 15.6 Inch Laptop X1504ZA - Intel Core i5 - RAM 8GB - SSD 512 GB - Blue" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.7</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star-half-empty.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(123)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      ASUS Vivobook 15.6" Inch Laptop X1504ZA - Intel Core i5 - RAM 8GB - SSD 512 GB - Blue
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>ASUS ErgoSense keyboard, comfortable typing experience</li>
+                        <li>Low blue light emissions certified by TÜV Rheinland</li>
+                        <li>Secure login with fingerprint sensor</li>
+                        <li>Physical WEB Camera Privacy Shield</li>
+                        <li>MIL-STD-810H Military Grade Certificate</li>
+                        </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 419,50</p>
+                        <p class="old-price">$ 800,42</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000005.png" alt="HP 23.8 Inch All in One Computer Cb1027la - Intel Core i5 - RAM 8GB - SSD 512 GB - Black" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">0</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star-empty.svg" alt="" srcset="">
+                        <img src="./images/icons/star-empty.svg" alt="" srcset="">
+                        <img src="./images/icons/star-empty.svg" alt="" srcset="">
+                        <img src="./images/icons/star-empty.svg" alt="" srcset="">
+                        <img src="./images/icons/star-empty.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(0)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      HP 23.8" Inch All in One Computer Cb1027la - Intel Core i5 - RAM 8GB - SSD 512 GB - Black
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Boots in seconds thanks to its solid state hard drive</li>
+                        <li>Stream 4K content seamlessly</li>
+                        <li>Anti-reflective panel adapts to any environment</li>
+                        <li>Energy savings, thanks to its ENERGY STAR Certification</li>
+                        <li>Easily sign in through Windows Hello</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 509,27</p>
+                        <p class="old-price">$ 873,20</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000006.png" alt="HP Victus Gamer Laptop 15.6 Inch Fa0000la Intel Core I5 - RAM 16GB - 512GB SSD Disk - Blue" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.9</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(48)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      HP Victus Gamer Laptop 15.6" Inch Fa0000la Intel Core I5 - RAM 16GB - 512GB SSD Disk - Blue
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Optimize your work with the alphanumeric backlit keyboard</li>
+                        <li>HP Fast Charge. Charge from 0 to 50% in approximately 45 min</li>
+                        <li>Fabulous, razor-sharp RGB screen.</li>
+                        <li>SSD storage. Turns on in seconds at full speed.</li>
+                        <li>FHD display, IPS, 250 nits and 45% NTSC, anti-glare</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 824,68</p>
+                        <p class="old-price">$ 1576,81</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000007.png" alt="HP Pavilion 14 Inch 2-in-1 Laptop Ek0008la Intel Core i5 - RAM 8 GB - SSD 512 GB - Black" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">5</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(1)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      HP Pavilion 14" Inch 2-in-1 Laptop Ek0008la Intel Core i5 - RAM 8 GB - SSD 512 GB - Black
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Includes HP Tilt MPP2.0 Rechargeable Pen</li>
+                        <li>Immerse yourself in entertainment with custom-quality Audio by B&O</li>
+                        <li>Fast battery charge 50% in 45 minutes</li>
+                        <li>HP Wide Vision 720p HD Camera, Better Video Calls</li>
+                        <li>Better connectivity, wireless card with Wifi 6</li>
+                        </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 569,92</p>
+                        <p class="old-price">$ 970,25</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000008.png" alt="ASUS TUF 15.6 Inch FX507ZC4 Gamer Laptop - Intel Core i5 - 16GB RAM - 512 GB SSD Disk - Gray" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">4.9</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(14)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      ASUS TUF 15.6" Inch FX507ZC4 Gamer Laptop - Intel Core i5 - 16GB RAM - 512 GB SSD Disk - Gray
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>Optimized heat dissipation with 4 air vents</li>
+                        <li>Thinner and lighter design with only 1.99 mm and 2.2Kg</li>
+                        <li>Longer lifespan with Military Grade 810H certification</li>
+                        <li>Fast charging technology, 50% in 30 minutes.</li>
+                        <li>Xbox Game pass for 3 months included</li>
+                      </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 897,47</p>
+                        <p class="old-price">$ 1188,62</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="product flex-responsive-row">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/product-00000009.png" alt="LENOVO All In One Computer 23.8 Inch AIO 3 - Intel Core i5 - RAM 8GB - SSD 512GB - Black" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <p class="rating-value">5</p>
+                      <div class="rating-stars">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                        <img src="./images/icons/star.svg" alt="" srcset="">
+                      </div>
+                      <p class="rating-count">(21)</p>
+                    </div>
+                    <a href="#">
+                    <h4 class="product-name">
+                      LENOVO All In One Computer 23.8" Inch AIO 3 - Intel Core i5 - RAM 8GB - SSD 512GB - Black
+                    </h4>
+                  </a>
+                    <div class="product-description">
+                      <ul>
+                        <li>FHD anti-glare screen, clearer and sharper images</li>
+                        <li>speed and solid state storage capacity 1 TB</li>
+                        <li>12th generation processor, greater performance and speed</li>
+                        <li>FHD high resolution camera, clearer video calls</li>
+                        <li>Wifi 6 Higher speed and lower energy consumption</li>
+                        </ul>
+                    </div>
+                    <div class="product-buy">
+                      <div class="pricing">
+                        <p class="price">$ 569,92</p>
+                        <p class="old-price">$ 970,25</p>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onclick="alert('Product added to cart!')"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div>
+              <button type="button" class="load-more-btn margin-x-auto">Load more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="container container-xl margin-x-auto">
+          <h3><span class="color-green">Exclusive</span> For You</h3>
+
+          <ul class="remove-list-styles exclusive-list flex-responsive-row">
+            <li>
+              <div>
+                <img src="images/icons/Services.svg" alt="">
+                <p class="font-bold">FREE AND FAST DELIVERY</p>
+                <p>Free delivery for all orders over $140</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/icons/Services-1.svg" alt="">
+                <p class="font-bold">24/7 CUSTOMER SERVICE</p>
+                <p>Friendly 24/7 customer support</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/icons/Services-2.svg" alt="">
+                <p class="font-bold">MONEY BACK GUARANTEE</p>
+                <p>We return money within 30 days</p>
+              </div>
+            </li>
+          </ul>
+
+          <div><button>Explore</button></div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="top">
+        <div class="left">
+          <p>Exclusive S.A.<br />NIT: 123456789-0</p>
+        </div>
+        <div class="center">
+          <a href="#"
+            ><img
+              class="logo-img"
+              src="images/icons/facebook.svg"
+              alt="facebook"
+          /></a>
+          <a href="#"
+            ><img class="logo-img" src="images/icons/x.svg" alt="x"
+          /></a>
+          <a href="#"
+            ><img
+              class="logo-img"
+              src="images/icons/instagram.svg"
+              alt="Instagram"
+          /></a>
+        </div>
+        <div class="right">
+          <a href="#"
+            ><img class="logo-img" src="images/icons/paypal.svg" alt="paypal"
+          /></a>
+          <a href="#"
+            ><img class="logo-img" src="images/icons/visa.svg" alt="visa"
+          /></a>
+          <a href="#"
+            ><img
+              class="logo-img"
+              src="images/icons/mastercard.svg"
+              alt="mastercard"
+          /></a>
+        </div>
+      </div>
+      <div class="sitemap">
+        <div class="section">
+          <h3>Exclusive</h3>
+          <p>Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">→</button>
+          </form>
+        </div>
+
+        <div class="section">
+          <h3>Support</h3>
+          <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <p><a href="mailto:info@exclusive.com">info@exclusive.com</a></p>
+          <p><a href="tel:+8801788888999">+88010-88888-9999</a></p>
+        </div>
+
+        <div class="section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Appliances</a></li>
+            <li><a href="#">Mobile Phones</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
