@@ -971,12 +971,26 @@ main.pdp {
 }
 
 /* Align technical specifications to the left */
-main.pdp .technical-specifications {
-  align-self: flex-start;
-  width: 100%; /* Ensures it takes the full width of its container */
-  padding-left: var(
-    --padding-large
-  ); /* Adds padding to the left for alignment */
+main.pdp .technical-specifications,
+main.pdp .home-page {
+  width: 85%; /* Ensures it takes the full width of its container */
+  align-items: left;
+}
+
+main.pdp .home-page p{
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--padding-medium);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+main.pdp .home-page .grid-container .product-box .text-container p{
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-light);
+  margin-bottom: var(--padding-medium);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 
 /* Align related products to the left */
@@ -1130,7 +1144,7 @@ main.pdp .purchase-options .btn-add-to-cart:hover {
 main.pdp .technical-specifications h2,
 main.pdp .related-products h2 {
   font-size: var(--font-size-large);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   margin-bottom: var(--padding-medium);
   font-family: "Inter", sans-serif;
 }
@@ -1242,6 +1256,21 @@ main.cart-page h3 {
   font-weight: 600;
 }
 
+main.cart-page .home-page p{
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--padding-medium);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+main.cart-page .home-page .grid-container .product-box .text-container p{
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-light);
+  margin-bottom: var(--padding-medium);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
 /* Breadcrumb */
 
 .breadcrumb.breadcrumb-cart {
