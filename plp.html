@@ -10,7 +10,9 @@
   <body>
     <header>
       <div>
-        <img class="logo-img" src="images/icons/logo.svg" alt="search" />
+        <a href="index.html">
+          <img class="logo-img" src="images/icons/logo.svg" alt="" />
+        </a>
       </div>
       <div class="header-search">
         <input type="text" placeholder="What are you looking for?" />
@@ -69,12 +71,19 @@
     </nav>
 
     <main class="plp">
-      <div class="sub-header container-xl margin-x-auto">
-        <div class="breadcrumb breadcrumb-cart">
-            <a href="#">Technology</a>
-            <a href="plp.html">Computers</a>
+      <div class="breadcrumb breadcrumb-cart container-xl margin-x-auto">
+        <a href="#">Technology</a>
+        <a href="plp.html">Computers</a>
+      </div>
+
+      <div class="sub-header container-xl margin-x-auto flex-responsive-row">
+        <div>
+          <h2>Computers</h2>
+          <p>Explore top-tier computers designed for performance, innovation, and reliability. Find your perfect match today</p>
         </div>
-        <h2>Computers</h2>
+        <div>
+          <img src="images/ads/two-pcs.png" alt="">
+        </div>
       </div>
 
       <div class="container flex-responsive-row container-xl margin-x-auto">
@@ -270,6 +279,16 @@
                 />
                 <label for="os2">MacOS</label>
                 <span class="number-results">(20)</span>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="os2"
+                  name="os2"
+                  value="15.6"
+                />
+                <label for="os2">Linux</label>
+                <span class="number-results">(1)</span>
               </li>
             </ul>
         </aside>
